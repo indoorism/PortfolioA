@@ -1,67 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My UX/UI Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hi, I'm Corey</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/index.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  
+<div id="header">
+<div class="container1">
+  <nav>
+    <img src="images/Untitled_Artwork_trans.png" class="logo">
+    <ul>
+      <li style="float:right"><a class="active" href="#home">Home</a></li>
+      <li style="float:right"><a class="active" href="#news">News</a></li>
+      <li style="float:right"><a class="active" href="#contact">Contact</a></li>
+      <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+  </nav>
+  
+<div id="wrapper">
+  <img class="logogif" src="images/3D Text-1s-289px.gif">
+    
+<div id="header-text">
+  <p>UI/UX Designer</p>
+  <h1>from Portland,OR</h1>
+      
+</div>
+    </div>
+  </div>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Introduce yourself and highlight your expertise here.</p>
-        </section>
+  <script>
+    console.log("Hello world!");
+    </script>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Provide a brief overview of your background, experience, and skills.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your project goes here.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of your project goes here.</p>
-            </div>
-            <!-- Add more project sections as needed -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>UX Design</li>
-                <li>UI Design</li>
-                <li>Wireframing</li>
-                <li>Prototyping</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Provide your contact details and a contact form for inquiries.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 My UX/UI Portfolio. All rights reserved.</p>
-    </footer>
 </body>
-</html>
+
+
+<!---about--->
+
+<div id="about">
+  <div class="container3">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/IMG_2834.JPG">
+    </div>
+    <div class="about-col-2">
+      <h1 class="sub-title">About me</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>
+        Orci porta non pulvinar neque laoreet. </span>
+        Nunc eget lorem dolor sed. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. 
+        Dignissim cras tincidunt lobortis feugiat vivamus at</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('About')">About</p>
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Work')">Work</p>
+        </div>
+        <div class="tab-contents active-tab" id="About">
+          <ul>
+            <li><span>UX Designer</span><br>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/ iOS Apps</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>Bigger Farms</span><br>Bigger Plants</li>
+            <li><span>Farms</span><br>Plants</li>
+            <li><span>Geek Squad-Best Buy</span><br>Tech Support</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Work">
+          <ul>
+            <li><span>Non-Profit Redesign</span><br>Non-Profit Redesign</li>
+            <li><span>Food Inventory</span><br>Food Inventory App</li>
+            <li><span>Government Redesign</span><br>Gov't Redesign</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tablink of tabcontents){
+      tablink.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+  }
+</script>
+
+<!--mySkills-->
+
+
+<!--myWork-->
+
+<div class="myWork">
+  <div class="container2">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <a href="#">Learn more</a>
+      </div>
+      <div>
+        <h2>UX Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <a href="#">Learn more</a>
+      </div>
+      <div>
+        <h2>App Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunnnnt ut labore et dolore magna aliqua</p>
+          <a href="#">Learn more</a>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-----myPortfolio----->
+
+<!--myContact-->
+
+<div id="contact">
+  <div class="container3">
+    <div class="row">
+      <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p>contact@example.com</p>
+      <p>0123456789</p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="copyright">
+    <p>Copyright TEXT</p>
+
+  </div>
+  
+    <!--myContact-->
+
+      </html>
