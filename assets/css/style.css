@@ -1,0 +1,50 @@
+/* Example CSS rules */
+
+/* Set background color and text color for the header */
+header {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Style the sections */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    color: #333;
+  }
+  
+  /* Customize other elements as per your design preferences */
+
+  /* Example media query for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    header {
+      padding: 10px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
