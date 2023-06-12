@@ -140,7 +140,8 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:rgb(222, 124, 241)
+    color:rgb(222, 124, 241);
+    word-spacing: 100%;
 }
 
 .tab-titles{
