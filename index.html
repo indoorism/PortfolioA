@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hi, I'm Corey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
 </head>
 
@@ -16,7 +18,6 @@
   <nav>
     <img src="images/Untitled_Artwork_trans.png" class="logo">
     <ul>
-      <li style="float:right"><a class="active" href="#work">Work</a></li>
       <li style="float:right"><a class="active" href="#contact">Contact</a></li>
       <li style="float:right"><a class="active" href="#about">About</a></li>
     </ul>
@@ -39,7 +40,6 @@
 
 </body>
 
-
 <!---about--->
 
 <div id="about">
@@ -58,9 +58,10 @@
 
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('About')">About</p>
-          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Experience')">UX Experience</p>
           <p class="tab-links" onclick="opentab('Work')">Work</p>
         </div>
+        
         <div class="tab-contents active-tab" id="About">
           <ul>
             <li><span>UX Designer</span><br>Designing Web/App Interfaces</li>
@@ -71,6 +72,14 @@
 
         <div class="tab-contents" id="Experience">
           <ul>
+            <li><span>Non-Profit Redesign</span><br>Non-Profit Redesign</li>
+            <li><span>Food Inventory</span><br>Food Inventory App</li>
+            <li><span>Government Redesign</span><br>Gov't Redesign</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Work">
+          <ul>
             <li><span>Pruf Cultivar</span>
               <br>Conducted plant care activities, including watering, fertilizing, pruning, and pest
               management.
@@ -79,15 +88,6 @@
             <li><span>Farms</span><br>Plants</li>
             <li><span>Geek Squad-Best Buy</span><br>Tech Support</li>
           </ul>
-        </div>
-
-        <div class="tab-contents" id="Work">
-          <ul>
-            <li><span>Non-Profit Redesign</span><br>Non-Profit Redesign</li>
-            <li><span>Food Inventory</span><br>Food Inventory App</li>
-            <li><span>Government Redesign</span><br>Gov't Redesign</li>
-          </ul>
-        </div>
     </div>
   </div>
 </div>
@@ -115,45 +115,38 @@
 
 <!--myWork-->
 
-<div class="myWork">
-  <div class="container2">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-      <div>
-        <h2>Web Design</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <a href="#">Learn more</a>
-      </div>
-      <div>
-        <h2>UX Design</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <a href="#">Learn more</a>
-      </div>
-      <div>
-        <h2>App Design</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunnnnt ut labore et dolore magna aliqua</p>
-          <a href="#">Learn more</a>
-      </div>
-
-
-
-
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/00-social-zendaya.jpg" class="d-block w-100" alt="zen">
+    </div>
+    <div class="carousel-item">
+      <img src="images/00-social-zendaya.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/00-social-zendaya.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-
-
-<!-----myPortfolio----->
 
 <!--myContact-->
 
 <div id="contact">
   <div class="container3">
-    <div class="row">
+    <div class="row2">
       <div class="contact-left">
       <h1 class="sub-title">Contact Me</h1>
       <p>contact@example.com</p>
