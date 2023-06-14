@@ -1,13 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 body{
     background: #080808;
     color: #fff;
 }
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Geologica', sans-serif;
+    
+  }
 
 #header{   
     width: 100%;
@@ -33,7 +37,7 @@ body{
 }
 
 .container3{
-    padding: 80px
+    padding: 50px
 }
 
 .wrapper{
@@ -297,6 +301,14 @@ nav ul li a:hover::after{
 
 /*-----myContact----*/
 
+#contact{
+    height: 90px;
+    width: auto;
+
+}
+
+
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -306,7 +318,8 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: #ccc;
   }
   
   /* Style the submit button with a specific background color etc */
@@ -330,6 +343,7 @@ input[type=text], select, textarea {
     background-color: #b272be;
     padding: 20px;
     color: #080808;
+    
   }
 
   .contact{
@@ -337,5 +351,6 @@ input[type=text], select, textarea {
     background-color: #b272be;
     padding: 20px;
     color: #080808;
+    
 
   }
