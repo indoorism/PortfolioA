@@ -77,6 +77,27 @@ ul{
     display: block;
 }
 
+a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #D41D86;
+  background-color: transparent;
+  
+}
+a:active {
+  color: #D41D86;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
